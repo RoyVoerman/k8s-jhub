@@ -103,7 +103,7 @@
       <div class="navbar-header">
         {% block logo %}
         <span id="jupyterhub-logo" class="pull-left">
-            <a href="../static/images/jupyter.png"><img src='{{base_url}}logo' alt='JupyterHub' class='jpy-logo' title='Home'/></a>
+            <a href="{{logo_url or base_url}}"><img src='{{base_url}}logo' alt='JupyterHub' class='jpy-logo' title='Home'/></a>
         </span>
         {% endblock %}
         {% if user %}
@@ -121,7 +121,7 @@
         <ul class="nav navbar-nav">
           {% block nav_bar_left_items %}
             <li><a href="{{base_url}}home">Home</a></li>
-            <li><a href="{{base_url}}security/csp-report">Monitoring</a></li>
+            <li><a href="{{base_url}}dashboards">Dashboards</a></li>
             <li><a href="{{base_url}}token">Token</a></li>
             {% if user.admin %}
             <li><a href="{{base_url}}admin">Admin</a></li>
