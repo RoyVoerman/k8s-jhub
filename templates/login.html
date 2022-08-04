@@ -24,14 +24,9 @@
               <h3> Google OAuth 2.0 </h3>
             </center> -->
             <center>
-              <a role="button" id="google-signin2" href='{{authenticator_login_url}}'>
-                <img width="200px" height="52px"
-                  src="https://storage.googleapis.com/utd/assets/btn_google_signin_dark_normal_web%402x.png"
-                  onmouseover="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_focus_web%402x.png'"
-                  onmouseout="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_normal_web%402x.png'"
-                  onmousedown="this.src='https://storage.googleapis.com/utd/assets/btn_google_signin_dark_pressed_web%402x.png'"
-                  border="0" alt="Google"/>
-              </a>
+                <a role="button" class='btn btn-jupyter btn-lg' href='{{authenticator_login_url}}'>
+                    Sign in with {{login_service}}
+                </a>
             </center>
             <div class="inputContainer">
              
