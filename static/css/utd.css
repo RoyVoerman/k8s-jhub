@@ -8,13 +8,13 @@ body {
 /* html {overflow: hidden;} */
 
 body {
-	background: url(../images/bg.jpg);
+	background: url(images\bg.png);
 	background-repeat: no-repeat;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	padding: 0;
-        background-size: cover;
-		background-position: center;
+	background-size: cover;
+	background-position: center;
 }
 
 a,
